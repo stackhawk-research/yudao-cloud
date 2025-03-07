@@ -124,44 +124,43 @@
 
 🙂 所有功能，都通过 **单元测试** 保证高质量。
 
-### 系统功能
+### System Function
 
-|     | 功能    | 描述                              |
+| | Function | Description |
 |-----|-------|---------------------------------|
-|     | 用户管理  | 用户是系统操作者，该功能主要完成系统用户配置          |
-| ⭐️  | 在线用户  | 当前系统中活跃用户状态监控，支持手动踢下线           |
-|     | 角色管理  | 角色菜单权限分配、设置角色按机构进行数据范围权限划分      |
-|     | 菜单管理  | 配置系统菜单、操作权限、按钮权限标识等，本地缓存提供性能    |
-|     | 部门管理  | 配置系统组织机构（公司、部门、小组），树结构展现支持数据权限  |
-|     | 岗位管理  | 配置系统用户所属担任职务                    |
-| 🚀  | 租户管理  | 配置系统租户，支持 SaaS 场景下的多租户功能        |
-| 🚀  | 租户套餐  | 配置租户套餐，自定每个租户的菜单、操作、按钮的权限       |
-|     | 字典管理  | 对系统中经常使用的一些较为固定的数据进行维护          |
-| 🚀  | 短信管理  | 短信渠道、短息模板、短信日志，对接阿里云、腾讯云等主流短信平台 |
-| 🚀  | 邮件管理  | 邮箱账号、邮件模版、邮件发送日志，支持所有邮件平台       |
-| 🚀  | 站内信   | 系统内的消息通知，提供站内信模版、站内信消息          |
-| 🚀  | 操作日志  | 系统正常操作日志记录和查询，集成 Swagger 生成日志内容 |
-| ⭐️  | 登录日志  | 系统登录日志记录查询，包含登录异常               |
-| 🚀  | 错误码管理 | 系统所有错误码的管理，可在线修改错误提示，无需重启服务     |
-|     | 通知公告  | 系统通知公告信息发布维护                    |
-| 🚀  | 敏感词   | 配置系统敏感词，支持标签分组                  |
-| 🚀  | 应用管理  | 管理 SSO 单点登录的应用，支持多种 OAuth2 授权方式 |
-| 🚀  | 地区管理  | 展示省份、城市、区镇等城市信息，支持 IP 对应城市      |
+| | User Management | Users are system operators. This function mainly completes system user configuration |
+| ⭐️ | Online Users | Active user status monitoring in the current system, supporting manual offline |
+| | Role Management | Role menu permission allocation, setting roles to divide data range permissions by organization |
+| | Menu Management | Configure system menus, operation permissions, button permission identifiers, etc. Local cache provides performance |
+| | Department Management | Configure system organizations (companies, departments, groups), and support data permissions in tree structure display |
+| | Position Management | Configure system user positions |
+| 🚀 | Tenant Management | Configure system tenants to support multi-tenant functions in SaaS scenarios |
+| 🚀 | Tenant Package | Configure tenant packages and customize the menu, operation, and button permissions of each tenant |
+| | Dictionary Management | Maintain some relatively fixed data that is frequently used in the system |
+| 🚀 | SMS management | SMS channels, SMS templates, SMS logs, docking with mainstream SMS platforms such as Alibaba Cloud and Tencent Cloud |
+| 🚀 | Email management | Email accounts, email templates, email sending logs, support for all email platforms |
+| 🚀 | Internal messages | Message notifications within the system, providing internal message templates and internal message messages |
+| 🚀 | Operation logs | System normal operation log records and queries, integrated Swagger to generate log content |
+| ⭐️ | Login logs | System login log record query, including login exceptions |
+| 🚀 | Error code management | Management of all system error codes, error prompts can be modified online without restarting the service |
+| | Notices and announcements | System notice and announcement information release and maintenance |
+| 🚀 | Sensitive words | Configure system sensitive words, support tag grouping |
+| 🚀 | Application management | Manage SSO single sign-on applications, support multiple OAuth2 authorization methods |
+| 🚀 | Regional Management | Displays information about provinces, cities, districts, towns, etc., and supports IP-to-city mapping |
 
-![功能图](/.image/common/system-feature.png)
+![Functional diagram](/.image/common/system-feature.png)
 
-### 工作流程
+### Workflow
 
-|    | 功能    | 描述                                      |
+| | Function | Description |
 |----|-------|-----------------------------------------|
-| 🚀 | 流程模型  | 配置工作流的流程模型，支持 BPMN 和仿钉钉/飞书设计器           |
-| 🚀 | 流程表单  | 拖动表单元素生成相应的工作流表单，覆盖 Element UI 所有的表单组件  |
-| 🚀 | 用户分组  | 自定义用户分组，可用于工作流的审批分组                     |
-| 🚀 | 我的流程  | 查看我发起的工作流程，支持新建、取消流程等操作，高亮流程图、审批时间线     |
-| 🚀 | 待办任务  | 查看自己【未】审批的工作任务，支持通过、不通过、转派、委派、退回、加减签等操作 |
-| 🚀 | 已办任务  | 查看自己【已】审批的工作任务，支持流程预测，展示未来审批人信息         |
-| 🚀 | OA 请假 | 作为业务自定义接入工作流的使用示例，只需创建请求对应的工作流程，即可进行审批  |
-
+| 🚀 | Process model | Configure the process model of the workflow, supporting BPMN and DingTalk/Feishu Designer |
+| 🚀 | Process form | Drag form elements to generate the corresponding workflow form, covering all form components of Element UI |
+| 🚀 | User grouping | Custom user grouping, which can be used for workflow approval grouping |
+| 🚀 | My process | View the workflow I initiated, support operations such as creating and canceling processes, highlight flowcharts, and approval timelines |
+| 🚀 | To-do tasks | View your own [unapproved] work tasks, support operations such as passing, failing, transferring, delegating, returning, adding and subtracting signatures |
+| 🚀 | Completed tasks | View the work tasks that you have approved, support process prediction, and display future approver information |
+| 🚀 | OA leave | As an example of using business custom access workflow, you only need to create a workflow corresponding to the request to approve it |
 ![功能图](/.image/common/bpm-feature.png)
 
 | BPMN 设计器                     | 钉钉/飞书设计器                       |
